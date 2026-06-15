@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Route Restaurant Menu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', serif;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: gold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .menu-section {
+            margin-top: 30px;
+        }
+
+        .menu-section h2 {
+            color: gold;
+            border-bottom: 2px solid gold;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 280px;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Spice Route Restraunt</h1>
+        <p class="subtitle">Delicious Food • Fresh Ingredients • Great Taste</p>
+
+        <!-- Starters -->
+        <div class="menu-section">
+            <h2>Starters</h2>
+
+            <div class="menu-items">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800" alt="Samosa">
+                    <div class="card-content">
+                        <h3>Samosa</h3>
+                        <p>Stuffed Potatoes with spices.</p>
+                        <p class="price">₹100</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800" alt="Chicken wings">
+                    <div class="card-content">
+                        <h3>Chicken wings</h3>
+                        <p>Fried chicken with spicy sauce.</p>
+                        <p class="price">₹300</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-section">
+            <h2>Main Course</h2>
+
+            <div class="menu-items">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=800" alt="Shahi Paneer">
+                    <div class="card-content">
+                        <h3>Shahi Paneer</h3>
+                        <p>Fried Indian Cottage Cheese with vegetables.</p>
+                        <p class="price">₹280</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800" alt="Butter Paneer">
+                    <div class="card-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Rich creamy paneer curry.</p>
+                        <p class="price">₹300</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-section">
+            <h2>Desserts</h2>
+
+            <div class="menu-items">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800" alt="Ice Cream">
+                    <div class="card-content">
+                        <h3>Ice Cream</h3>
+                        <p>Vanilla ice cream with toppings.</p>
+                        <p class="price">₹120</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="Chocolate Cake">
+                    <div class="card-content">
+                        <h3>Chocolate Cake</h3>
+                        <p>Soft and delicious chocolate cake.</p>
+                        <p class="price">₹300</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-section">
+            <h2>Beverages</h2>
+
+            <div class="menu-items">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800" alt="Mango Shake">
+                    <div class="card-content">
+                        <h3>Mango Shake</h3>
+                        <p>Chilled Mango Shake With Real Mango Pulp.</p>
+                        <p class="price">₹140</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800" alt="Fruit Beer">
+                    <div class="card-content">
+                        <h3>Fresh Fruit Beer</h3>
+                        <p>100% fresh fruit Beer.</p>
+                        <p class="price">₹180</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <h3>📍Spice Route Restaurant</h3>
+            <p>Open Daily | 10:00 AM - 11:00 PM</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
